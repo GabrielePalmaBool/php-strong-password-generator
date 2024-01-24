@@ -9,10 +9,16 @@ body {
   text-align: center;
 }
 
-ul {
-  margin-top: 50px;
-  list-style-type: none;
+body .input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-body h1 {
-  color: red;
+
+body h4 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

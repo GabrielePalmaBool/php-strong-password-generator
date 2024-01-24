@@ -29,7 +29,8 @@
 
 
 <?php
-     $_SESSION['password'] = $pass=Genpw($lenght);
+
+    $_SESSION['password'] = $pass=Genpw($lenght);
 
     if($lenght != -1 && $lenght != '') {
       

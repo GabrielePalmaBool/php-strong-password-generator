@@ -10,6 +10,8 @@
     <?php
     
             require_once __DIR__ ."/partials/function.php";
+
+            session_start();
     ?>
     
     <title>Pass-gen</title>
@@ -27,9 +29,15 @@
 
 
 <?php
-     
+     $_SESSION['password'] = $pass=Genpw($lenght);
 
-    if($lenght != -1 && $lenght != '') echo'<h4>la tua password sar&agrave;: '.$pass=Genpw($lenght).'</h4>';
+    if($lenght != -1 && $lenght != '') {
+      
+      header('Location: ./result.php');
+
+    }
+
+    
 
 ?>
   

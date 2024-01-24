@@ -6,42 +6,17 @@
 
     <!-- Link css style-->
     <link rel="stylesheet" href="css\style.css">
+
+    <?php
+    
+            require_once __DIR__ ."/partials/function.php";
+    ?>
     
     <title>Pass-gen</title>
 </head>
 <body>
 
-<?php
 
-$lenght = $_GET['lng'] ?? '-1';
-
-function Genpw($lenght){
-
-    if($lenght == '-1'){
-        echo 'fai la tua scelta';
-        
-    }
-    
-    $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-
-    $pass = array(); //remember to declare $pass as an array
-
-    $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
-
-    for ($i = 0; $i < $lenght; $i++) {
-
-        $n = rand(0, $alphaLength);
-
-        $pass[] = $alphabet[$n];
-        
-    }
-    $array = implode($pass);
-   
-    
-    return $array ; //trasformo l'array in una stringa
-}
-    
-?>
 
 <form class="input">
 
@@ -53,7 +28,7 @@ function Genpw($lenght){
 
 <?php
 
-    if($lenght !== '-1') echo'<h4>la tua password sar&agrave;: '.$pass=Genpw($lenght).'</h4>';
+    if($lenght !== '-1' || $lenght !== '') echo'<h4>la tua password sar&agrave;: '.$pass=Genpw($lenght).'</h4>';
 
 ?>
   

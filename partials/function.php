@@ -3,7 +3,8 @@
 
     function Genpw($lenght){
 
-        
+        if($lenght == '-1') return-1;
+
         $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
 
         $pass = array(); //remember to declare $pass as an array

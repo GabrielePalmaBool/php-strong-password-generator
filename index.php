@@ -27,8 +27,9 @@
 
 
 <?php
+     
 
-    if($lenght !== '-1' || $lenght !== '') echo'<h4>la tua password sar&agrave;: '.$pass=Genpw($lenght).'</h4>';
+    if($lenght != -1 && $lenght != '') echo'<h4>la tua password sar&agrave;: '.$pass=Genpw($lenght).'</h4>';
 
 ?>
   

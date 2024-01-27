@@ -22,10 +22,11 @@
 <body>
     <?php
 
-   
             echo'<h4>la tua password sar&agrave;: '.$pass.'</h4>';
     ?>
+
     <button type="submit" class="btn" onclick="location.href='index.php'"><span><span>Torna indietro</span></span></button>
+    
 </body>
 </html>
 

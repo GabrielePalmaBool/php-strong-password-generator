@@ -22,16 +22,27 @@
 
 <form class="input">
 
-  <h2 for="quantity">Scegli la lunghezza della password da 1 a 10</h2>
-  <input type="number" id="quantity" name="lng" min="1" max="10">
+  <h2 >Scegli la lunghezza della password da 1 a 10</h2><br>
+  <input type="number" name="lng" min="1" max="10" class="number"><br>
+  
+
+  <input type="checkbox" name="num" value="Bike">
+  <label for="vehicle1"> Con numeri?</label><br>
+  <input type="checkbox"  name="cs" value="Car">
+  <label for="vehicle2"> Con lettere?</label><br>
+  <input type="checkbox"  name="sym" value="Boat">
+  <label for="vehicle3"> con simboli?</label><br>
+  <input type="checkbox"  name="dup" value="Boat">
+  <label for="vehicle3"> con duplicati?</label><br><br>
   <input type="submit" value="Seleziona">
 </form>
 
 
 <?php
 
-    $_SESSION['password'] = $pass=Genpw($lenght);
+    $_SESSION['password'] = $pass=Genpw2($lenght,$number,$char,$symbol,$duplicate);
 
+    
     if($lenght != -1 && $lenght != '') {
       
       header('Location: ./result.php');

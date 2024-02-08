@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Link css style-->
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\prova.css">
 
     <?php
     
@@ -17,8 +17,6 @@
     <title>Pass-gen</title>
 </head>
 <body>
-
-
 
 <form class="input">
 

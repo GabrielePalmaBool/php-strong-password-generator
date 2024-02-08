@@ -13,6 +13,10 @@ body .input {
   margin-top: 200px;
 }
 
+h2 {
+  color: red;
+}
+
 .number {
   width: 100px;
   margin: 20px;
